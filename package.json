@@ -1,0 +1,20 @@
+{
+  "name": "sales_analytics",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "graphql": "^16.11.0",
+    "mongoose": "^8.14.0",
+    "nodemon": "^3.1.10",
+    "uuid": "^11.1.0"
+  }
+}

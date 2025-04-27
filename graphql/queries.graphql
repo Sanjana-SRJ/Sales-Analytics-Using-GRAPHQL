@@ -1,0 +1,29 @@
+For testing: 
+
+query GetSalesAnalytics($startDate: String!, $endDate: String!) {
+  getSalesAnalytics(startDate: $startDate, endDate: $endDate) {
+    totalRevenue
+    completedOrders  
+    categoryBreakdown {
+      category
+      revenue       
+    }
+  }
+}
+
+query {
+  getTopSellingProducts(limit: 10) {
+    productId
+    name
+    totalSold
+  }
+}
+
+query {
+  getCustomerSpending(customerId: "51d492a7-56ad-44e6-bdd3-0571f77fccfc") {
+    customerId
+    totalSpent
+    averageOrderValue
+    lastOrderDate
+  }
+}
